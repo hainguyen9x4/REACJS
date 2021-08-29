@@ -29,3 +29,22 @@ class Book2{
 var book2 = new Book2("Tieng goi noi hoang da",322);
 
 console.log(book2.sayName());
+//Destructuring
+var arr = [1,2,3,4,5]
+var obj ={
+    fullName:"Van",
+    addr:"Thainguyen",
+    age: 21,
+    gernder:'Male'
+}
+let a,b,c,r;
+[a,b,c,...r]=arr;
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(r);
+//
+const {fullName:b1,addr:c2,...r2} = obj;
+console.log(b1);
+console.log(c2);
+console.log(r2);
