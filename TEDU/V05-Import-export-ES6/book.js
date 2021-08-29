@@ -11,3 +11,9 @@ export function draw(ctx, length, x, y, color) {
     color: color
   };
 }
+export class Book{
+    constructor(bookName, pageSize){
+        this.bookName = bookName;
+        this.pageSize = pageSize;
+    }
+}
